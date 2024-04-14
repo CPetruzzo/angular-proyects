@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0px
+}
+
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 0.73rem;
+    margin-top: 1.5rem;
+}
+
+.social-links path {
+    transition: fill 0.3s ease;
+    fill: var(--gray-400);
+}
+
+.social-links a:hover svg path {
+    fill: var(--gray-900);
+}

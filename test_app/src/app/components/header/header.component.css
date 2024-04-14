@@ -1,99 +1,70 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 900px;
+}
+
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #ffcc00; /* Cambia a tu color de resaltado */
-  }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    nav ul {
-      margin-top: 10px;
-    }
-  
-    nav ul li {
-      margin: 0;
-    }
-  }
+	text-align: center;
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0 0 85% 85% / 30%;
+}
 
-  /* Tu CSS anterior permanece igual */
+header .overlay {
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+	background-image: url(https://www.wegher.com.ar/images/backgroundpetruzzo.webp);
+	background-size: cover;
+	background-position: 50%;
+	/* background-image: linear-gradient(135deg, #9f05ff2d 1%, slateblue 100%); */
+}
 
-.menu-icon {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  .mobile-menu {
-    display: none;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .menu-icon {
-      display: flex;
-    }
-  
-    nav {
-      position: relative;
-    }
-  
-    .nav-list {
-      display: flex;
-      align-items: center;
-    }
-  
-    .mobile-menu {
-      display: block;
-    }
-  }
-  
+h1 {
+	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol";
+
+	font-size: 80px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+h3,
+p {
+	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+		"Segoe UI Symbol";
+
+	margin-bottom: 30px;
+}
+
+button {
+	border: none;
+	outline: none;
+	margin: 0px 8px;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #fff;
+	background: linear-gradient(135deg, #9f05ff2d 10%, slateblue 100%);
+	margin-bottom: 50px;
+	transition: ease-in 150ms;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+button:hover {
+	cursor: pointer;
+	transition: ease-in 150ms;
+	box-shadow: 0 3px 20px 0 rebeccapurple;
+}
