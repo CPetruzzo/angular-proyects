@@ -9,13 +9,4 @@ import { SidebarMenuComponent } from '../sidebar-menu/sidebar-menu.component';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  isMenuOpen = false;
-
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  closeMenu() {
-    this.isMenuOpen = false;
-  }
 }
